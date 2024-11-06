@@ -1,0 +1,368 @@
+<?php
+
+session_start();
+$_SESSION['registration_option'] = "NULL";
+
+require 'ConfEditionVariables.php';
+
+?>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<!--Import materialize.css-->
+			<title><?php echo $confYear ?> IEEE SeGAH - Homepage</title>
+			<meta name="name" content="content" charset="utf-8">
+				<link type="text/css" rel="stylesheet" href="<?php echo $css_materialize ?>" media="screen,projection"/>
+				<link rel="stylesheet" href="<?php echo $css_animation ?>">
+					<link type="text/css" rel="stylesheet" href="<?php echo $css_segah ?>" media="screen,projection"/>
+					<!--Let browser know website is optimized for mobile-->
+					<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+					<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate"/>
+					<meta http-equiv="Expires" content="-1"/>
+					<meta http-equiv="Pragma" content="no-cache"/>
+				</head>
+				<body>
+					<div id="header"/>
+					<div class="imagemPerth-10 valign-wrapper"/>
+					<main>
+						<div class="container">
+							<div class="row">
+								<div class="col s12 m12 l12">
+									<h2 class="bebas">Online registration platform</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12 m12 l8">
+									<div class="card">
+										<div class="card-content cinza-text">
+											<span class="card-title cinza-text bebas">
+												<h2>Registration Fees</h2>
+											</span>
+											<ul class="collapsible" data-collapsible="accordion">
+												<li>
+													<div class="collapsible-header">
+														<i class="material-icons"/>Attendee(s)
+													</div>
+													<div class="collapsible-body">
+														<table>
+															<tbody>
+																<tr>
+																	<td/>
+																	<td class="negrito center">Until <?php $confEarlyBirdText ?></td>
+																	<td class="negrito center">After <?php $confEarlyBirdText ?></td>
+																</tr>
+																<tr>
+																	<td>
+																		<input class="with-gap" name="group1" type="radio" id="pay01"/>
+																		<label for="pay01">Full For Non-Member</label>
+																	</td>
+																	<td class="center">
+																		520 €
+																	</td>
+																	<td class="center">
+																		640 €
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<input class="with-gap" name="group1" type="radio" id="pay02"/>
+																		<label for="pay02">Full for IEEE Member</label>
+																	</td>
+																	<td class="center">
+																		410 €
+																	</td>
+																	<td class="center">
+																		510 €
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<input class="with-gap" name="group1" type="radio" id="pay03"/>
+																		<label for="pay03">Members of the Programme Committee</label>
+																	</td>
+																	<td class="center">
+																		410 €
+																	</td>
+																	<td class="center">
+																		510 €
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<input class="with-gap" name="group1" type="radio" id="pay04"/>
+																		<label for="pay04">Student IEEE Member</label>
+																	</td>
+																	<td class="center">
+																		230 €
+																	</td>
+																	<td class="center">
+																		280 €
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<input class="with-gap" name="group1" type="radio" id="pay05"/>
+																		<label for="pay05">Student Non-Member</label>
+																	</td>
+																	<td class="center">
+																		410 €
+																	</td>
+																	<td class="center">
+																		510 €
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<input class="with-gap" name="group1" type="radio" id="pay06"/>
+																		<label for="pay06">IEEE Life Member Fee</label>
+																	</td>
+																	<td class="center">
+																		230 €
+																	</td>
+																	<td class="center">
+																		280 €
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<button class="btn waves-effect waves-light" id="pay_attendee" onclick="funcPayAttendee()" type="submit" name="action">Submit
+																			<i class="material-icons right"/>
+																		</button>
+																	</td>
+																</tr>
+																<tr>
+																	<td/>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</li>
+												<li>
+													<div class="collapsible-header">
+														<i class="material-icons"/>Author(s)
+													</div>
+													<div class="collapsible-body">
+														<table>
+															<tbody>
+																<tr>
+																	<td/>
+																	<td class="negrito center">Until <?php $confEarlyBirdText ?></td>
+																	<td class="negrito center">After <?php $confEarlyBirdText ?></td>
+																</tr>
+																<td>
+																	<input class="with-gap" name="group1" type="radio" id="pay11"/>
+																	<label for="pay11">Full For Non-Member</label>
+																</td>
+																<td class="center">
+																	520 €
+																</td>
+																<td class="center">
+																	640 €
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<input class="with-gap" name="group1" type="radio" id="pay12"/>
+																	<label for="pay12">Full for IEEE Member</label>
+																</td>
+																<td class="center">
+																	410 €
+																</td>
+																<td class="center">
+																	510 €
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<input class="with-gap" name="group1" type="radio" id="pay13"/>
+																	<label for="pay13">Members of the Programme Committee</label>
+																</td>
+																<td class="center">
+																	410 €
+																</td>
+																<td class="center">
+																	510 €
+																</td>
+															</tr>
+															<tr>
+																<td/>
+															</tr>
+															<tr>
+																<td>
+																	<button class="btn waves-effect waves-light" id="pay_author" onclick="funcPayAuthor()" type="submit" name="action">Submit
+																		<i class="material-icons right"/>
+																	</button>
+																</td>
+															</tr>
+															<tr>
+																<td/>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</li>
+											<li>
+												<div class="collapsible-header">
+													<i class="material-icons"/>Workshop/Tutorial/Demo Organization
+												</div>
+												<div class="collapsible-body">
+													<table>
+														<tbody>
+															<tr>
+																<td/>
+																<td class="negrito center">Cost (€)</td>
+															</tr>
+															<tr>
+																<td>
+																	<input class="with-gap" name="group1" type="radio" id="pay21"/>
+																	<label for="pay21">Workshop</label>
+																</td>
+																<td class="center">
+																	1000 €
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<input class="with-gap" name="group1" type="radio" id="pay22"/>
+																	<label for="pay22">Tutorial</label>
+																</td>
+																<td class="center">
+																	1000 €
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<input class="with-gap" name="group1" type="radio" id="pay23"/>
+																	<label for="pay23">Demo</label>
+																</td>
+																<td class="center">
+																	1000 €
+																</td>
+															</tr>
+															<tr>
+																<td/>
+															</tr>
+															<tr>
+																<td>
+																	<button class="btn waves-effect waves-light" id="pay_workshop" onclick="funcPayWorkshop()" type="submit" name="action">Submit
+																		<i class="material-icons right"/>
+																	</button>
+																</td>
+															</tr>
+															<tr>
+																<td/>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</li>
+										</ul>
+										<p>&nbsp;</p>
+										<p>&nbsp;</p>
+										<p>&nbsp;</p>
+										<span class="card-title cinza-text bebas">
+											<h2>Electronic Copyright Form</h2>
+										</span>
+										<button class="btn waves-effect waves-light" id="eCF_submit" onclick="funcGenerate_eCF()" type="submit" name="action">Submit Copyright
+											<i class="material-icons right"/>
+										</button>
+									</td>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--fecha linha fees-->
+				</div>
+				<!--fecha container-->
+			</main>
+			<div id="footer"/>
+			<!--Import jQuery before materialize.js-->
+			<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"/>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"/>
+			<script src="<?php $js_animation ?>" charset="utf-8"/>
+			<script type="text/javascript" src="<?php $js_materialize ?>"/>
+			<script type="text/javascript" src="<?php $js_animation ?>"/>
+			<script type="text/javascript" src="<?php $js_segah ?>"/>
+			<!--Import jQuery before materialize.js-->
+			<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"/>
+			<script type="text/javascript" src="<?php $js_materialize ?>"/>
+			
+			
+
+			<script>
+    $(function () {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
+
+
+			<script>$(document).ready(function() { $('.animsition').animsition(); });</script>
+			<script>function funcPayAttendee() { 
+				if (document.getElementById("pay01").checked) { 
+					window.location.href = "Attendee_FullNonMember.php";
+				} 
+				if (document.getElementById("pay02").checked) { 
+					window.location.href = "Attendee_FullIEEEMember.php"; 
+				} 
+				if (document.getElementById("pay03").checked) { 
+					window.location.href = "Attendee_ProgrammeCommittee.php"; 
+				} 
+				if (document.getElementById("pay04").checked) { 
+					window.location.href = "Attendee_StudentMember.php"; 
+				} 
+				if (document.getElementById("pay05").checked) { 
+					window.location.href = "Attendee_StudentNonMember.php"; 
+				} 
+				if (document.getElementById("pay06").checked) { 
+					window.location.href = "Attendee_RetiredMember.php"; 
+				} 
+				if (document.getElementById("pay07").checked) { 
+					window.location.href = "Attendee_1DayPass.php"; 
+				} 
+			} 
+			
+			function funcPayAuthor() { 
+				if (document.getElementById("pay11").checked) { 
+					window.location.href = "Author_FullNonMember.php"; 
+				} 
+				if (document.getElementById("pay12").checked) { 
+					window.location.href = "Author_FullIEEEMember.php"; 
+				} 
+				if (document.getElementById("pay13").checked) { 
+					window.location.href = "Author_ProgrammeCommittee.php"; 
+				} 
+				if (document.getElementById("pay14").checked) { 
+					window.location.href = "Author_StudentMember.php"; 
+				} 
+				if (document.getElementById("pay15").checked) { 
+					window.location.href = "Author_StudentNonMember.php"; 
+				} 
+				if (document.getElementById("pay16").checked) { 
+					window.location.href = "Author_RetiredMember.php"; 
+				} 
+			} 
+			
+			function funcPayWorkshop() { 
+				if (document.getElementById("pay21").checked) { 
+					window.location.href = "Workshop.php"; 
+				} 
+				if (document.getElementById("pay22").checked) { 
+					window.location.href = "TutorialDemo.php"; 
+				} if (document.getElementById("pay23").checked) { 
+					window.location.href = "TutorialDemo.php"; 
+				} 
+			} 
+			
+			function funcUploadFile() { 
+				window.location.href = "Upload_Proof.php"; 
+			} 
+			
+			function funcGenerate_eCF() { 
+				window.location.href = "eCF.php"; 
+			}</script>
+		</body>
+	</html>

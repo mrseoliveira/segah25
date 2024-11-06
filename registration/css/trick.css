@@ -1,0 +1,8 @@
+body {
+    background: url(../assets/back.gif) no-repeat;
+    /* background-attachment: fixed; */
+    background-size: contain;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
