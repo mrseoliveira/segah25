@@ -98,10 +98,10 @@ require 'ConfEditionVariables.php';
 																		<label for="pay01">Full For Non-Member</label>
 																	</td>
 																	<td class="center">
-																		640 €
+																		740 €
 																	</td>
 																	<td class="center">
-																		800 €
+																		850 €
 																	</td>
 																</tr>
 																<tr>
@@ -110,10 +110,10 @@ require 'ConfEditionVariables.php';
 																		<label for="pay02">Full for IEEE Member</label>
 																	</td>
 																	<td class="center">
-																		510 €
+																		590 €
 																	</td>
 																	<td class="center">
-																		640 €
+																		710 €
 																	</td>
 																</tr>
 																<tr>
@@ -122,10 +122,10 @@ require 'ConfEditionVariables.php';
 																		<label for="pay03">Members of the Programme Committee</label>
 																	</td>
 																	<td class="center">
-																		510 €
+																		590 €
 																	</td>
 																	<td class="center">
-																		640 €
+																		710 €
 																	</td>
 																</tr>
 																<tr>
@@ -134,10 +134,10 @@ require 'ConfEditionVariables.php';
 																		<label for="pay04">Student IEEE Member</label>
 																	</td>
 																	<td class="center">
-																		280 €
+																		320 €
 																	</td>
 																	<td class="center">
-																		350 €
+																		390 €
 																	</td>
 																</tr>
 																<tr>
@@ -146,10 +146,10 @@ require 'ConfEditionVariables.php';
 																		<label for="pay05">Student Non-Member</label>
 																	</td>
 																	<td class="center">
-																		510 €
+																		590 €
 																	</td>
 																	<td class="center">
-																		640 €
+																		710 €
 																	</td>
 																</tr>
 																<tr>
@@ -158,10 +158,10 @@ require 'ConfEditionVariables.php';
 																		<label for="pay06">IEEE Life Member Fee</label>
 																	</td>
 																	<td class="center">
-																		280 €
+																		320 €
 																	</td>
 																	<td class="center">
-																		350 €
+																		390 €
 																	</td>
 																</tr>
 																<tr>
@@ -198,10 +198,10 @@ require 'ConfEditionVariables.php';
 																	<label for="pay11">Full For Non-Member</label>
 																</td>
 																<td class="center">
-																	640 €
+																	740 €
 																</td>
 																<td class="center">
-																	800 €
+																	850 €
 																</td>
 															</tr>
 															<tr>
@@ -210,10 +210,10 @@ require 'ConfEditionVariables.php';
 																	<label for="pay12">Full for IEEE Member</label>
 																</td>
 																<td class="center">
-																	510 €
+																	590 €
 																</td>
 																<td class="center">
-																	640 €
+																	710 €
 																</td>
 															</tr>
 															<tr>
@@ -222,10 +222,10 @@ require 'ConfEditionVariables.php';
 																	<label for="pay13">Members of the Programme Committee</label>
 																</td>
 																<td class="center">
-																	510 €
+																	590 €
 																</td>
 																<td class="center">
-																	640 €
+																	710 €
 																</td>
 															</tr>
 															<tr>

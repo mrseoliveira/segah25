@@ -18,8 +18,8 @@ require 'ConfEditionVariables.php';
 //require '../../PHPMailer-master/src/PHPMailer.php';
 
 // Prices before and after early bird
-$pay_value_1 = "510";
-$pay_value_2 = "640";
+$pay_value_1 = "590";
+$pay_value_2 = "710";
 
 $errorMessage = "";
 
@@ -454,13 +454,12 @@ function processPage($value,$trackingCode){
 		                                   <tr>
 		                                     <td>Article Title 1<span class="error"> * </td>
 		                                     <td class="center">		                                     			                                     	
-		                                      <?
+		                   <?php
                            $conn = new mysqli($servername, $username, $password, $dbname);
                            $resultArticles = $conn->query("select * from articles order by title asc");
                              while($obj = $resultArticles->fetch_object()){
                                 $articles .='<option value="'.$obj->id.'">'.$obj->title.'</option>';
                             };
-
                            ?>               
                   <select name="str_article_one" required="required" required>
                     <option value="">Choose Article</option>

@@ -43,9 +43,10 @@ require 'ConfEditionVariables.php';
 <p class="negrito"><!--?php echo htmlspecialchars($thankyou); ?--></p>
 
 <p>Thank you for registering for SeGAH <?php echo $confYear; ?>!</p>
-<?
+<?php
 $values = unserialize(base64_decode($_GET['h']));
 ?>
+
 <p>Your registration number is <b><?=$values['id']?></b><br><br>
 Please click the button bellow to complete your payment.&nbsp;</p>
 

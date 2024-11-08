@@ -16,8 +16,8 @@ function test_input($data) {
 require 'ConfEditionVariables.php';
 
 // Prices before and after early bird
-$pay_value_1 = "280";
-$pay_value_2 = "350";
+$pay_value_1 = "320";
+$pay_value_2 = "390";
 
 $errorMessage = "";
 
