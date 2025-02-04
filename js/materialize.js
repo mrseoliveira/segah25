@@ -1,6 +1,6 @@
 /*!
  * Materialize v0.97.6 (http://materializecss.com)
- * Copyright 2014-2025 Materialize
+ * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 // Check for jQuery.
